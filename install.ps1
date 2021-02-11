@@ -32,11 +32,13 @@ $tweaks = @(
 	"TitusRegistryTweaks",
 	"InstallTitusProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
+	"InstallGoogleChrome",
 	"InstallThunderbird",
 	"InstallMSTeams",
-  "InstallSumatraPDF",
-  "InstallVirtualBox",
-  "InstallLibreOffice",
+        "InstallSumatraPDF",
+        "InstallVirtualBox",
+	"InstallNotepadPlusPlus",
+        "InstallLibreOffice",
 	#"ChangeDefaultApps",
 
 	### Windows Apps
@@ -246,22 +248,28 @@ Function InstallTitusProgs {
 }
 
 Function Install7Zip {
-	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
+	Show-Choco-Menu -Title "Instalar 7-Zip?" -ChocoInstall "7zip"
 }
 Function InstallThunderbird {
-	Show-Choco-Menu -Title "Do you want to install Thunderbird?" -ChocoInstall "thunderbird"
+	Show-Choco-Menu -Title "Instalar Thunderbird?" -ChocoInstall "thunderbird"
 }
 Function InstallMSTeams {
-	Show-Choco-Menu -Title "Do you want to install Microsoft Teams?" -ChocoInstall "microsoft-teams"
+	Show-Choco-Menu -Title "Instalar Microsoft Teams?" -ChocoInstall "microsoft-teams"
 }
 Function InstallSumatraPDF {
-	Show-Choco-Menu -Title "Do you want to install Sumatra PDF?" -ChocoInstall "sumatrapdf"
+	Show-Choco-Menu -Title "Instalar Sumatra PDF?" -ChocoInstall "sumatrapdf"
 }
 Function InstallVirtualBox {
-	Show-Choco-Menu -Title "Do you want to install VirtualBox?" -ChocoInstall "virtualbox"
+	Show-Choco-Menu -Title "Instalar VirtualBox?" -ChocoInstall "virtualbox"
 }
 Function InstallLibreOffice {
-	Show-Choco-Menu -Title "Do you want to install Libre Office?" -ChocoInstall "libreoffice"
+	Show-Choco-Menu -Title "Instalar Libre Office?" -ChocoInstall "libreoffice"
+}
+Function InstallNotepadPlusPlus {
+	Show-Choco-Menu -Title "Instalar Notepad++?" -ChocoInstall "notepadplusplus"
+}
+Function InstallGoogleChrome {
+	Show-Choco-Menu -Title "Instalar Google Chrome?" -ChocoInstall "googlechrome"
 }
 
 Function ChangeDefaultApps {
