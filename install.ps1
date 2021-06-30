@@ -207,18 +207,18 @@ function Show-Choco-Menu {
  {
     Clear-Host
     Write-Host "================ $Title ================"
-    Write-Host "Y: Press 'Y' to do this."
-    Write-Host "2: Press 'N' to skip this."
-	Write-Host "Q: Press 'Q' to stop the entire script."
+    Write-Host "Y: Presionar 'S' para instalar."
+    Write-Host "2: Presionar 'N' para no instalar."
+	Write-Host "Q: Presionar 'Q' para finalizar el script."
     $selection = Read-Host "Please make a selection"
     switch ($selection)
     {
-    'y' { choco install $ChocoInstall -y }
+    's' { choco install $ChocoInstall -y }
     'n' { Break }
     'q' { Exit  }
     }
  }
- until ($selection -match "y" -or $selection -match "n" -or $selection -match "q")
+ until ($selection -match "s" -or $selection -match "n" -or $selection -match "q")
 }
 
 Function TitusRegistryTweaks {
